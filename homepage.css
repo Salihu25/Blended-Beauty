@@ -1,0 +1,430 @@
+/* GENERAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  color: #111;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+/* =================== TASKBAR =================== */
+.taskbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+#logo img {
+  width: 80%;
+  max-width: 120px;
+  height: auto;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  font-weight: 500;
+  cursor: pointer;
+  flex: 1;
+}
+
+#contactusbtn {
+  border: 2px solid black;
+  background: white;
+  padding: 1vh 3vh;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#contactusbtn:hover {
+  background: black;
+  color: white;
+}
+
+/* =================== HERO SECTION =================== */
+.heroSec {
+  background: url("hero image.png") center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.desc {
+  max-width: 60%;
+}
+
+#desc1 {
+  font-family: "EB Garamond", serif;
+  font-size: 5vw;
+  margin-bottom: 2vh;
+}
+
+#desc2 {
+  color: rgba(63, 63, 63, 0.7);
+  font-weight: 300;
+  margin-bottom: 4vh;
+}
+
+#heroBtn {
+  background: black;
+  color: white;
+  border: none;
+  padding: 2vh 5vh;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#heroBtn:hover {
+  opacity: 0.8;
+}
+
+/* =================== PRODUCTS =================== */
+.products {
+  text-align: center;
+  padding: 10vh 5%;
+}
+
+#prdctsHd {
+  font-family: "EB Garamond", serif;
+  margin-bottom: 2vh;
+}
+
+#sunbHd {
+  color: rgba(63, 63, 63, 0.7);
+  font-weight: 300;
+  max-width: 80%;
+  margin: 0 auto 5vh;
+}
+
+.prdctDisp {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3%;
+}
+
+.product {
+  background: url("image 20.png") center/cover no-repeat;
+  width: 22%;
+  aspect-ratio: 3/4;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+#Pbtn {
+  margin: 5vh auto;
+}
+
+#Pbtn button {
+  border: 2px solid black;
+  background: white;
+  padding: 1.5vh 4vh;
+  cursor: pointer;
+}
+
+.descConc {
+  font-family: "Space Grotesk", sans-serif;
+  color: rgba(63, 63, 63, 0.7);
+  max-width: 60%;
+  margin: 3vh auto;
+  font-size: 0.95rem;
+}
+
+/* =================== ABOUT US =================== */
+.aboutus {
+  padding: 10vh 5%;
+  text-align: center;
+}
+
+.abtimg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5%;
+  margin-top: 5vh;
+}
+
+.about-card {
+  width: 45%;
+  background-size: cover;
+  background-position: center;
+  padding: 10%;
+  color: #313131;
+  text-align: left;
+  border-radius: 10px;
+  font-size: large;
+}
+
+/* =================== WHY CHOOSE US =================== */
+.why-choose-us {
+  text-align: center;
+  padding: 10vh 5%;
+}
+
+.why-choose-us h2 {
+  font-family: "EB Garamond", serif;
+  font-size: 2.5rem;
+  margin-bottom: 5vh;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+.feature {
+  width: 28%;
+  text-align: center;
+}
+
+.feature img {
+  width: 50%;
+  max-width: 250px;
+  margin-bottom: 2vh;
+}
+
+.feature h3 {
+  font-family: "EB Garamond", serif;
+  font-weight: 600;
+  margin-bottom: 1vh;
+}
+
+.feature p {
+  color: #7a7a7a;
+  font-size: 0.95rem;
+}
+
+/* =================== FOOTER =================== */
+.footer {
+  background: #fff;
+  padding: 5vh 5%;
+  border-top: 1px solid #ccc;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5%;
+  margin-bottom: 3vh;
+}
+
+.footer-logo img {
+  width: 80px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1vw;
+  margin: 1vh 0;
+}
+
+.social-icons a {
+  background: #111;
+  color: #fff;
+  padding: 1vh;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: #444;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.footer-bottom a {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* =================== RESPONSIVENESS =================== */
+@media (max-width: 900px) {
+  .links {
+    gap: 3%;
+  }
+  .desc {
+    max-width: 90%;
+  }
+  .about-card {
+    width: 90%;
+  }
+  .product {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .taskbar {
+    flex-direction: row;
+    font-size: 55%;
+    gap: 1rem;
+  }
+  .links {
+    gap: 10%;
+  }
+  #logo img {
+    width: 50%;
+    max-width: 60px;
+    height: auto;
+  }
+  #contactusbtn {
+    font-size: 10px;
+    width: 90px;
+    border: 2px solid black;
+    background: white;
+    padding: 1vh 3vh;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .heroSec {
+  background: url("Hero\ image\ phone.png") center/cover no-repeat;
+    height: 70vh;
+  }
+  .desc {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #desc1 {
+    display: flex;
+    justify-content: center;
+    font-family: "EB Garamond", serif;
+    font-size: 30px;
+  }
+  #heroBtn {
+    height: 50px;
+    width: 150px;
+    font-size: 10px;
+    display: block;
+    margin: 0 auto; /* centers horizontally */
+    
+  }
+
+#desc2 {
+  font-family: "EB Garamond", serif;
+  font-size: 18px;
+  color: #000000;         /* matches the soft grey in the image */
+  text-align: center;  /* centers the text */
+  line-height: 1.4;    /* similar spacing to the example */
+  max-width: 380px;    /* controls where the line breaks */
+  margin: 0 auto;      /* centers the block itself */
+padding-left: 10%;
+}
+
+.product {
+  width: 90%;
+}
+.prdctDisp {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 10px;
+}
+.features{
+  display: flex;
+ flex-direction: column;
+  justify-content: center;
+align-items: center;
+}
+.about-card {
+  width: auto;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  padding: 10%;
+  color: #313131;
+  text-align: left;
+  border-radius: 10px;
+}
+.about-card > h2{
+   font-family: "EB Garamond", serif;
+  font-size: 30px;
+}
+.about-card > h4{
+   font-family: "EB Garamond", serif;
+  font-size: 15px;
+}
+/* Section container */
+.why-choose-us {
+  text-align: center;
+  padding: 60px 20px;
+  font-family: "EB Garamond", serif;
+}
+
+/* Section title */
+.why-choose-us h2 {
+  font-size: 34px;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+/* Grid of features */
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+}
+
+/* Single feature block */
+.feature {
+  max-width: 600px; /* increased from 450px */
+  text-align: center;
+  
+}
+
+/* Icon styling */
+.feature img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Titles */
+.feature h3 {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.6;
+
+  white-space: nowrap;   /* keep on one line */
+  display: inline-block; /* keeps size tight but centered */
+
+}
+
+/* Description text */
+.feature p {
+  font-size: 10px;
+  line-height: 1.6;
+  color: #555;
+  font-family: "Inter", sans-serif; /* secondary clean font */
+}
+}
+
+

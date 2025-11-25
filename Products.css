@@ -1,121 +1,119 @@
 /* ---------------- HEADER ---------------- */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 80px;
-    background: white;
-    height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 80px;
+  background: white;
+  height: 50px;
 }
 
-.logo >img{
-    height: 50px;
-} 
+.logo > img {
+  height: 50px;
+}
 
 .header .nav a {
-    margin: 0 20px;
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
+  margin: 0 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
 }
 
 .contact-btn {
-    padding: 10px 25px;
-    background: black;
-    color: white;
-    border: none;
-    cursor: pointer;
+  padding: 10px 25px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
-
 
 /* ---------------- HERO BANNER ---------------- */
 .hero {
-   background-color: #444;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-image: url(image\ 15.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero h1 {
-    color: white;
-    font-size: 40px;
+  color: white;
+  font-size: 40px;
 }
-
 
 /* ---------------- CATEGORY ICONS ---------------- */
 .categories {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin: 40px 0;
 }
 
 .cat {
-    text-align: center;
+  text-align: center;
 }
 
 .cat img {
-    width: 70px;
-    height: 70px;
+  width: 70px;
+  height: 70px;
 }
-
 
 /* ---------------- FILTER BAR ---------------- */
 .filters {
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
 .filters button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 14px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
 }
 
 .filters .active {
-    border-bottom: 2px solid black;
+  border-bottom: 2px solid black;
 }
-
 
 /* ---------------- PRODUCT GRID ---------------- */
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
-    padding: 40px 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  padding: 40px 60px;
 }
 
 .product-card {
-    text-align: center;
+  text-align: center;
 }
 
 .product-card img {
-    width: 200px;
+  width: 200px;
 }
 
 .product-card button {
-    padding: 7px 40px;
-    margin-top: 10px;
-    border: 1px solid black;
-    background: white;
-    cursor: pointer;
+  padding: 7px 40px;
+  margin-top: 10px;
+  border: 1px solid black;
+  background: white;
+  cursor: pointer;
 }
-
 
 /* ---------------- PROMO SECTION ---------------- */
 .promo {
-    background: url('promo.png') center/cover no-repeat;
-    padding: 120px 0;
-    text-align: center;
-    color: white;
-    font-size: 20px;
+  background: url("promo.png") center/cover no-repeat;
+  padding: 120px 0;
+  text-align: center;
+  color: white;
+  font-size: 20px;
 }
-
 
 /* ---------------- FOOTER ---------------- */
 
@@ -174,117 +172,115 @@
 }
 /* ▬▬▬▬▬ PHONE LAYOUT (max-width: 768px) ▬▬▬▬▬ */
 @media (max-width: 768px) {
+  /* ----- HEADER ----- */
+  .header {
+    padding: 15px 25px;
+  }
 
-    /* ----- HEADER ----- */
-    .header {
-        padding: 15px 25px;
-    }
+  .nav {
+    display: none; /* hide desktop menu */
+  }
 
-    .nav {
-        display: none; /* hide desktop menu */
-    }
+  .contact-btn {
+    display: none; /* hide contact button */
+  }
 
-    .contact-btn {
-        display: none; /* hide contact button */
-    }
+  /* ----- HERO BANNER ----- */
+  .hero {
+    height: 180px;
+  }
 
-    /* ----- HERO BANNER ----- */
-    .hero {
-        height: 180px;
-    }
+  .hero h1 {
+    font-size: 28px;
+  }
 
-    .hero h1 {
-        font-size: 28px;
-    }
+  /* ----- CATEGORY ICONS ----- */
+  .categories {
+    gap: 20px;
+    padding: 0 10px;
+    margin: 25px 0;
+  }
 
-    /* ----- CATEGORY ICONS ----- */
-    .categories {
-        gap: 20px;
-        padding: 0 10px;
-        margin: 25px 0;
-    }
+  .cat img {
+    width: 50px;
+    height: 50px;
+  }
 
-    .cat img {
-        width: 50px;
-        height: 50px;
-    }
+  .cat h3 {
+    font-size: 12px;
+  }
 
-    .cat h3 {
-        font-size: 12px;
-    }
+  /* ----- FILTER BAR ----- */
+  .filters {
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 20px;
+    padding: 10px 20px;
+  }
 
-    /* ----- FILTER BAR ----- */
-    .filters {
-        overflow-x: auto;
-        white-space: nowrap;
-        gap: 20px;
-        padding: 10px 20px;
-    }
+  .filters button {
+    font-size: 13px;
+  }
 
-    .filters button {
-        font-size: 13px;
-    }
+  /* ----- PRODUCT GRID ----- */
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px 25px;
+  }
 
-    /* ----- PRODUCT GRID ----- */
-    .product-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-        padding: 20px 25px;
-    }
+  .product-card img {
+    width: 160px;
+  }
 
-    .product-card img {
-        width: 160px;
-    }
+  .product-card h3 {
+    font-size: 16px;
+  }
 
-    .product-card h3 {
-        font-size: 16px;
-    }
+  .product-card p {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
 
-    .product-card p {
-        font-size: 13px;
-        margin-bottom: 10px;
-    }
+  .product-card button {
+    padding: 8px 25px;
+  }
 
-    .product-card button {
-        padding: 8px 25px;
-    }
+  /* ----- PROMO SECTION ----- */
+  .promo {
+    padding: 60px 20px;
+    font-size: 16px;
+  }
 
-    /* ----- PROMO SECTION ----- */
-    .promo {
-        padding: 60px 20px;
-        font-size: 16px;
-    }
+  .promo h2 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
 
-    .promo h2 {
-        font-size: 18px;
-        margin-top: 10px;
-    }
+  /* ----- FOOTER ----- */
+  .footer {
+    padding: 40px 20px;
+    text-align: center;
+  }
 
-    /* ----- FOOTER ----- */
-    .footer {
-        padding: 40px 20px;
-        text-align: center;
-    }
+  .footer-logo {
+    font-size: 30px;
+  }
 
-    .footer-logo {
-        font-size: 30px;
-    }
+  .contact {
+    margin-top: 20px;
+  }
 
-    .contact {
-        margin-top: 20px;
-    }
+  .contact p {
+    font-size: 14px;
+  }
 
-    .contact p {
-        font-size: 14px;
-    }
+  .icons {
+    margin: 15px 0;
+  }
 
-    .icons {
-        margin: 15px 0;
-    }
-
-    .copyright {
-        font-size: 13px;
-        margin-top: 20px;
-    }
+  .copyright {
+    font-size: 13px;
+    margin-top: 20px;
+  }
 }
-
